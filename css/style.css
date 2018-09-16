@@ -290,7 +290,6 @@ input[type="radio"].visually-hidden {
 /*---Услуги---*/
 
 .services {
-  padding: 0;
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -646,13 +645,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.footer-social-container {
+.footer-social {
   display: flex;
   align-items: flex-start;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 69px 0;
-  width: 1160px;
+  padding-top: 69px;
+  padding-bottom: 57px;
 }
 
 .social-buttons {
@@ -662,12 +659,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-right: 128px;
   padding: 0;
+  max-width: 273px;
   list-style: none;
 }
 
 .social-buttons li {
+  margin-bottom: 12px;
   margin-right: 12px;
-  max-width: 273px;
 }
 
 .social-button {
@@ -1060,7 +1058,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-
 .filter-item {
   margin: 0;
   padding: 0;
@@ -1112,8 +1109,7 @@ input[type="radio"].visually-hidden {
   border: 8px solid #ffffff;
   border-radius: 50%;
   background-color: #ababab;
-  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-          box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
@@ -1195,6 +1191,7 @@ input[type="radio"].visually-hidden {
 .sorting-updown {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -1378,6 +1375,7 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
