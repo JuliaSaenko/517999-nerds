@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 1200px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -37,8 +38,7 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-         clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -47,9 +47,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-right:20px;
-  padding-left: 20px;
-  width: 1200px;
+  width: 1160px;
 }
 
 /*---Кнопки---*/
@@ -100,7 +98,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-logo {
-  margin-right: 156px;
+  margin-right: 202px;
 
 }
 
@@ -123,7 +121,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-  margin-left: 46px;
+  margin-right: 46px;
 }
 
 .site-navigation .active {
@@ -141,8 +139,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
- .cart-link:hover,
- .cart-link:focus {
+.cart-link:hover,
+.cart-link:focus {
   color: #fb565a;
 }
 
@@ -266,18 +264,18 @@ input[type="radio"].visually-hidden {
   margin-top: 25px;
 }
 
-.slide-title {
+.slide-lead {
   max-width: 520px;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
 }
 
-.slide-title b {
+.slide-lead b {
   font-weight: 500;
 }
 
-.slide-info {
+.slide-caption {
   max-width: 415px;
 }
 
@@ -292,7 +290,8 @@ input[type="radio"].visually-hidden {
 /*---Услуги---*/
 
 .services {
-  padding: 80px 0;
+  padding: 0;
+  padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -307,6 +306,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list li {
+  margin-top: 80px;
   width: 300px;
 }
 
@@ -536,20 +536,21 @@ input[type="radio"].visually-hidden {
   height: 180px;
 }
 
-.clients-list li:first-child,
-.clients-list li:last-child {
+.clients-list li:nth-child(4n+1),
+.clients-list li:nth-child(4n) {
   width: 280px;
 }
 
-.clients-list li:first-child {
+.client-htmlacademy {
   padding-top: 10px;
   padding-right: 20px;
 }
 
-.clients-list li:last-child {
+.client-mishka {
   padding-top: 5px;
   padding-left: 20px;
 }
+
 
 .clients-list li:not(:nth-child(4n))::after {
   content: "";
@@ -592,33 +593,33 @@ input[type="radio"].visually-hidden {
   margin-top: 80px;
 }
 
-.main-footer .container,
-.inner-footer .container {
-  position: relative;
-  display: flex;
-}
-
 .find-us {
   position: relative;
   margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  min-height: 416px;
+  background-color: #eceae2;
+  background-image: url("../img/map-with-marker.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .map {
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: block;
   margin: 0;
   width: 100%;
-  height: 416px;
+  height: 100%;
   border: 0;
 }
 
 .contacts {
-  z-index: 3;
-  position: absolute;
-  top: 54px;
-  left: 20px;
+  position: relative;
+  z-index: 2;
   padding: 50px 50px 47px;
   width: 319px;
   background-color: #ffffff;
@@ -645,10 +646,13 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.footer-social {
+.footer-social-container {
   display: flex;
   align-items: flex-start;
+  margin-right: auto;
+  margin-left: auto;
   padding: 69px 0;
+  width: 1160px;
 }
 
 .social-buttons {
@@ -663,6 +667,7 @@ input[type="radio"].visually-hidden {
 
 .social-buttons li {
   margin-right: 12px;
+  max-width: 273px;
 }
 
 .social-button {
@@ -687,6 +692,10 @@ input[type="radio"].visually-hidden {
 
 .social-button:active svg {
    opacity: 0.3;
+}
+
+.footer-promo {
+  max-width: 560px;
 }
 
 .footer-promo p + p {
@@ -962,6 +971,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: block;
   cursor: pointer;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1168,6 +1178,7 @@ input[type="radio"].visually-hidden {
 .catalog-sorting {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom : 53px;
 }
 
@@ -1255,7 +1266,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   margin:0;
-  margin-bottom: 27px;
+  margin-bottom: 17px;
   padding: 0;
   list-style: none;
 }
@@ -1373,6 +1384,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item {
+  margin-top: 10px;
   margin-right: 10px;
 }
 
@@ -1395,7 +1407,6 @@ input[type="radio"].visually-hidden {
 .next-page {
   width: 260px;
 }
-
 
 .pagination-item a:last-of-type {
   margin-right: 0;
